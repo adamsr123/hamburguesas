@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var textoPais: UILabel!
     @IBOutlet weak var textoHamburguesa: UILabel!
     
+    let listaPaises = ColeccionDePaises()
+    let listaHamburguesas = ColeccionDeHamburguesa()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +27,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nuevaHamburguesa() {
-        textoHamburguesa.text = "Working :-)"
-        textoPais.text = "Working!!!"
+        textoHamburguesa.text = listaHamburguesas.obtenHamburguesa()
+        textoPais.text = listaPaises.obtenPais()
     }
 }
 
