@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytZ-Kl-Fzl">
+                                <rect key="frame" x="71" y="159" width="183" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVa-CC-YO5">
+                                <rect key="frame" x="48" y="357" width="229" height="30"/>
+                                <state key="normal" title="Quiero una hamburguesa!"/>
+                                <connections>
+                                    <action selector="nuevaHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ukp-VI-qtR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DN-sD-vqx">
+                                <rect key="frame" x="79" y="226" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wVa-CC-YO5" secondAttribute="bottom" constant="181" id="9eg-F3-b3E"/>
+                            <constraint firstItem="wVa-CC-YO5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="337" id="Bkz-1I-Wpe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ytZ-Kl-Fzl" secondAttribute="bottom" constant="387" id="DBZ-IV-5Ec"/>
+                            <constraint firstItem="ytZ-Kl-Fzl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="FaL-4b-P0B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5DN-sD-vqx" secondAttribute="trailing" constant="83" id="GeT-0x-Xdf"/>
+                            <constraint firstItem="5DN-sD-vqx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="206" id="JZ0-DS-peo"/>
+                            <constraint firstItem="5DN-sD-vqx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="63" id="OKC-5G-uc6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wVa-CC-YO5" secondAttribute="trailing" constant="27" id="cEW-mm-cQQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5DN-sD-vqx" secondAttribute="bottom" constant="321" id="eeB-VV-0Mq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ytZ-Kl-Fzl" secondAttribute="trailing" constant="50" id="g9g-Tl-rwV"/>
+                            <constraint firstItem="wVa-CC-YO5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="hcO-GP-7zr"/>
+                            <constraint firstItem="ytZ-Kl-Fzl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="139" id="q0M-pN-VfU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textoHamburguesa" destination="5DN-sD-vqx" id="cFf-pT-49Q"/>
+                        <outlet property="textoPais" destination="ytZ-Kl-Fzl" id="N62-KQ-Ri5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="377"/>
+        </scene>
+    </scenes>
+</document>
